@@ -1,0 +1,18 @@
+{
+	"Sales": [{
+		"DrugName": "Cranberry Cream",
+		"Revenue": "7.37"
+	}, {
+		"DrugName": "Wart Remover Liquid",
+		"Revenue": "9.54"
+	}, {
+		"DrugName": "Hydrochlorothiazide",
+		"Revenue": "6.57"
+	}, {
+		"DrugName": "Terazosin Hydrochloride",
+		"Revenue": "5.41"
+	}, {
+		"DrugName": "Topiramate",
+		"Revenue": "8.69"
+	}]
+}

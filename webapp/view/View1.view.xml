@@ -1,0 +1,78 @@
+<mvc:View controllerName="Fragment.Fragment.controller.View1" xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:data="sap.viz.ui5.data" xmlns:feeds="sap.viz.ui5.controls.common.feeds">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Assignment">
+					<content>
+						<IconTabBar id="idIconTabBarMulti" class="sapUiResponsiveContentPadding">
+							<items>
+								<IconTabFilter icon="sap-icon://hint" text="Fragment">
+									<Label text="City" labelFor="multinput"/>
+									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
+									<Label text="Country" labelFor="multinput"/>
+									<Input id="input2" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://attachment" text="Pie Charts">
+									<!--<viz:VizFrame id="idpiechart" vizType="pie"></viz:VizFrame>-->
+									<viz:VizFrame vizType="pie">
+										<viz:dataset>
+											<data:FlattenedDataset data="{Data>/items}">
+												<data:dimensions>
+													<data:DimensionDefinition name="Department" value="{Data>Department}"/>
+												</data:dimensions>
+												<data:measures>
+													<data:MeasureDefinition name="Employee Count" value="{Data>EmployeeCount}"/>
+												</data:measures>
+											</data:FlattenedDataset>
+										</viz:dataset>
+										<viz:feeds>
+											<feeds:FeedItem uid="size" type="Measure" values='Employee Count'/>
+											<feeds:FeedItem uid="color" type="Dimension" values="Department"/>
+										</viz:feeds>
+									</viz:VizFrame>
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://notes" text="Bar">
+									<viz:VizFrame vizType="bar">
+										<viz:dataset>
+											<data:FlattenedDataset data="{/empdata}">
+												<data:dimensions>
+													<data:DimensionDefinition name="Employee Id" value="{name}"></data:DimensionDefinition>
+												</data:dimensions>
+												<data:measures>
+													<data:MeasureDefinition name="Issue Fixed" value="{issue}"></data:MeasureDefinition>
+												</data:measures>
+											</data:FlattenedDataset>
+										</viz:dataset>
+										<viz:feeds>
+											<feeds:FeedItem type="Dimension" values="Employee Id" uid="categoryAxis"></feeds:FeedItem>
+											<feeds:FeedItem type="Measure" values="Issue Fixed" uid="valueAxis"></feeds:FeedItem>
+										</viz:feeds>
+									</viz:VizFrame>
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://hint" text="Donut">
+									<viz:VizFrame vizType="donut" vizProperties="{plotArea: { drawingEffect: 'glossy' },title:{ text:'Donut Chart Example'}}">
+										<viz:dataset>
+											<data:FlattenedDataset data="{Data>/items}">
+												<data:dimensions>
+													<data:DimensionDefinition name="Department" value="{Data>Department}"/>
+												</data:dimensions>
+												<data:measures>
+													<data:MeasureDefinition name="Employee Count" value="{Data>EmployeeCount}"/>
+												</data:measures>
+											</data:FlattenedDataset>
+										</viz:dataset>
+										<viz:feeds>
+											<feeds:FeedItem uid="size" type="Measure" values='Employee Count'/>
+											<feeds:FeedItem uid="color" type="Dimension" values="Department"/>
+										</viz:feeds>
+									</viz:VizFrame>
+								</IconTabFilter>
+							</items>
+						</IconTabBar>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
