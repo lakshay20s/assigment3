@@ -10,8 +10,8 @@
 								<IconTabFilter icon="sap-icon://hint" text="Fragment">
 									<Label text="City" labelFor="multinput"/>
 									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
-									<!--<Label text="Country" labelFor="multinput"/>
-									<Input id="input2" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>-->
+									<Label text="Country" labelFor="multinput"/>
+									<Input id="input2" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://attachment" text="Pie Charts">
 									<!--<viz:VizFrame id="idpiechart" vizType="pie"></viz:VizFrame>-->
