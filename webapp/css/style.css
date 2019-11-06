@@ -1,7 +1,5 @@
 
-.classbg {
-    background: yellow !important;
-}
+
 
 input#container-Fragment---View1--input2-inner {
     background: lightpink !important;
@@ -16,4 +14,7 @@ input:hover{
 RadioButton : hover{
 	background : green !important;
 	color : red !important;
+}
+img#__image0:hover{
+	zoom:2;
 }

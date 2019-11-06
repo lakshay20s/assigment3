@@ -1,0 +1,24 @@
+{
+	"animals": [{
+			"name": "Tiger",
+			"available": 30
+		}, {
+			"name": "Elephant",
+			"available": 60
+		}, {
+			"name": "Deer",
+			"available": 50
+		}, {
+			"name": "Lion",
+			"available": 49
+		}, {
+			"name": "Water Bird",
+			"available": 70
+		}, {
+			"name": "Fox",
+			"available": 65
+		}
+
+	]
+
+}

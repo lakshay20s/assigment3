@@ -9,13 +9,13 @@
 							<items>
 								<IconTabFilter icon="sap-icon://hint" text="Fragment">
 									<Label text="Country" labelFor="multinput"/>
-									<Input id="input2" showValueHelp="true" valueHelpRequest="onValueHelpRequested" ></Input>
+									<Input id="input2" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
 									<Label text="City" labelFor="multinput"/>
-									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested" class="classbg"></Input>
+									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://attachment" text="Pie Charts">
 									<!--<viz:VizFrame id="idpiechart" vizType="pie"></viz:VizFrame>-->
-									<viz:VizFrame vizType="pie">
+									<viz:VizFrame vizType="pie" vizProperties="{title:{ text:'PIE chart'}}">
 										<viz:dataset>
 											<data:FlattenedDataset data="{Data>/items}">
 												<data:dimensions>
@@ -33,7 +33,7 @@
 									</viz:VizFrame>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://notes" text="Bar">
-									<viz:VizFrame vizType="bar">
+									<viz:VizFrame vizType="column" vizProperties="{title:{ text:'Bar Chart'}}">
 										<viz:dataset>
 											<data:FlattenedDataset data="{/empdata}">
 												<data:dimensions>
@@ -50,7 +50,7 @@
 										</viz:feeds>
 									</viz:VizFrame>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://hint" text="Donut">
+								<IconTabFilter icon="sap-icon://notes" text="Donut">
 									<viz:VizFrame vizType="donut" vizProperties="{plotArea: { drawingEffect: 'glossy' },title:{ text:'Donut Chart Example'}}">
 										<viz:dataset>
 											<data:FlattenedDataset data="{Data>/items}">
@@ -68,7 +68,7 @@
 										</viz:feeds>
 									</viz:VizFrame>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://page" text="CSS">
+								<IconTabFilter icon="sap-icon://tree" text="CSS">
 									<VBox>
 										<HBox>
 											<Label text="First Name"></Label>
@@ -97,6 +97,28 @@
 											<RadioButton text="B.Tech" groupName="quali"></RadioButton>
 										</HBox>
 									</VBox>
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://phone" text="Formatter">
+									<!--<List id="idTable" items="{animal>/animals}">
+										<items>
+											<ObjectListItem title="{name}" number="{available}" numberUnit="available"
+															numberState="{path :'available;, formatter:'.formatter.availablecolor'}">
+												
+											</ObjectListItem>
+										</items>
+									</List>-->
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://inventory" text="Image Hover">
+									<!--<Image src="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants_small.jpg" decorative="false" width="170px"
+										densityAware="false">
+										<detailBox>
+											<LightBox>
+												<LightBoxItem imageSrc="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants.jpg" alt="Nature image" title="Elephant image"
+													subtitle="Zoomed"></LightBoxItem>
+											</LightBox>
+										</detailBox>
+									</Image>-->
+									<Image src="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants_small.jpg" width="170px"></Image>
 								</IconTabFilter>
 							</items>
 						</IconTabBar>
