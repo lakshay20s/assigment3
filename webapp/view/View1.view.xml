@@ -8,10 +8,10 @@
 						<IconTabBar id="idIconTabBarMulti" class="sapUiResponsiveContentPadding">
 							<items>
 								<IconTabFilter icon="sap-icon://hint" text="Fragment">
-									<Label text="City" labelFor="multinput"/>
-									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
 									<Label text="Country" labelFor="multinput"/>
-									<Input id="input2" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
+									<Input id="input2" showValueHelp="true" valueHelpRequest="onValueHelpRequested" ></Input>
+									<Label text="City" labelFor="multinput"/>
+									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested" class="classbg"></Input>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://attachment" text="Pie Charts">
 									<!--<viz:VizFrame id="idpiechart" vizType="pie"></viz:VizFrame>-->
@@ -67,6 +67,36 @@
 											<feeds:FeedItem uid="color" type="Dimension" values="Department"/>
 										</viz:feeds>
 									</viz:VizFrame>
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://page" text="CSS">
+									<VBox>
+										<HBox>
+											<Label text="First Name"></Label>
+											<Input placeholder="first name"></Input>
+										</HBox>
+										<HBox>
+											<Label text="Second Name"></Label>
+											<Input placeholder="second name"></Input>
+										</HBox>
+										<HBox>
+											<Label text="Contact"></Label>
+											<Input type="Number" maxLength="10" placeholder="contact"></Input>
+										</HBox>
+										<HBox>
+											<Label text="Address"></Label>
+											<Input placeholder="full address"></Input>
+										</HBox>
+										<HBox>
+											<Label text="Gender"></Label>
+											<RadioButton text="Male" groupName="gender"></RadioButton>
+											<RadioButton text="Female" groupName="gender"></RadioButton>
+										</HBox>
+										<HBox>
+											<Label text="Highest Qualification"></Label>
+											<RadioButton text="M.Tech" groupName="quali"></RadioButton>
+											<RadioButton text="B.Tech" groupName="quali"></RadioButton>
+										</HBox>
+									</VBox>
 								</IconTabFilter>
 							</items>
 						</IconTabBar>
