@@ -1,12 +1,13 @@
 var id = "";
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function (Controller) {
+	"sap/ui/core/mvc/Controller",
+	"Fragment/Fragment/utils/formatter"
+], function (Controller,formatter) {
 	"use strict";
 
 	return Controller.extend("Fragment.Fragment.controller.View1", {
 		
-		
+		test:formatter,
 
 		onValueHelpRequested: function (oEvent) {
 

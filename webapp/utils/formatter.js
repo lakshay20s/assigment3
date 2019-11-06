@@ -1,14 +1,9 @@
-sap.ui.define([]
-
-	,
-
-	function () {
-
-		return {
-			availablecolor: function (available) {
-
+sap.ui.define([],
+	function (){
+		return{
+			availablecolor:function(available) {
 				if (available > 50) {
-					return "Sucess";
+					return "Success";
 				} else {
 					return "Error";
 				}

@@ -1,4 +1,5 @@
 <mvc:View controllerName="Fragment.Fragment.controller.View1" xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc"
+xmlns:image="CustomControl.Fragment.control"
 	displayBlock="true" xmlns="sap.m" xmlns:data="sap.viz.ui5.data" xmlns:feeds="sap.viz.ui5.controls.common.feeds">
 	<Shell id="shell">
 		<App id="app">
@@ -14,7 +15,7 @@
 									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://attachment" text="Pie Charts">
-									<!--<viz:VizFrame id="idpiechart" vizType="pie"></viz:VizFrame>-->
+								
 									<viz:VizFrame vizType="pie" vizProperties="{title:{ text:'PIE chart'}}">
 										<viz:dataset>
 											<data:FlattenedDataset data="{Data>/items}">
@@ -50,7 +51,7 @@
 										</viz:feeds>
 									</viz:VizFrame>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://notes" text="Donut">
+								<IconTabFilter icon="sap-icon://locked" text="Donut">
 									<viz:VizFrame vizType="donut" vizProperties="{plotArea: { drawingEffect: 'glossy' },title:{ text:'Donut Chart Example'}}">
 										<viz:dataset>
 											<data:FlattenedDataset data="{Data>/items}">
@@ -99,25 +100,16 @@
 									</VBox>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://phone" text="Formatter">
-									<!--<List id="idTable" items="{animal>/animals}">
+									<List id="idTable" items="{animal>/animals}">
 										<items>
-											<ObjectListItem title="{name}" number="{available}" numberUnit="available"
-															numberState="{path :'available;, formatter:'.formatter.availablecolor'}">
+											<ObjectListItem title="{animal>name}" number="{animal>available}" numberUnit="available"
+															numberState="{path :'animal>available', formatter:'.test.availablecolor'}">
 												
 											</ObjectListItem>
 										</items>
-									</List>-->
+									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://inventory" text="Image Hover">
-									<!--<Image src="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants_small.jpg" decorative="false" width="170px"
-										densityAware="false">
-										<detailBox>
-											<LightBox>
-												<LightBoxItem imageSrc="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants.jpg" alt="Nature image" title="Elephant image"
-													subtitle="Zoomed"></LightBoxItem>
-											</LightBox>
-										</detailBox>
-									</Image>-->
 									<Image src="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants_small.jpg" width="170px"></Image>
 								</IconTabFilter>
 							</items>
