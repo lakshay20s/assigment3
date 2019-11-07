@@ -1,0 +1,94 @@
+{
+	"empdata": [{
+			"name": "Lakshay",
+			"location": "Dwarka",
+			"field": "PI/PO",
+			"gender": "Male",
+			"date": "20072019",
+			"project": "Johson",
+			"fresher": "No"
+		},
+		{
+			"name": "Manika",
+			"location": "Dwarka",
+			"field": "UI5",
+			"gender": "Female",
+			"date": "20072018",
+			"project": "NA",
+			"fresher": "No"
+		},
+		{
+			"name": "Shruti",
+			"location": "Mumbai",
+			"field": "ABAP",
+			"gender": "Female",
+			"date": "20072019",
+			"project": "NA",
+			"fresher": "Yes"
+		},
+		{
+			"name": "Banner",
+			"location": "Pune",
+			"field": "ABAP",
+			"gender": "Male",
+			"date": "20072019",
+			"project": "NA",
+			"fresher": "No"
+		},
+		{
+			"name": "Arpit",
+			"location": "Dwarka",
+			"field": "WD",
+			"gender": "Male",
+			"date": "20072019",
+			"project": "Uniport",
+			"fresher": "Yes"
+		},
+		{
+			"name": "Rohan",
+			"location": "Mumbai",
+			"field": "ABAP",
+			"gender": "Male",
+			"date": "20072019",
+			"project": "News Uk",
+			"fresher": "Yes"
+		},{
+			"name": "Kiran",
+			"location": "Pune",
+			"field": "PI/PO",
+			"gender": "Female",
+			"date": "20072019",
+			"project": "Johnson",
+			"fresher": "Yes"
+		},
+		{
+			"name": "Shweta",
+			"location": "Noida",
+			"field": "ABAP",
+			"gender": "Female",
+			"date": "20072019",
+			"project": "NA",
+			"fresher": "Yes"
+		},
+		{
+			"name": "Gargi",
+			"location": "Noida",
+			"field": "UI5",
+			"gender": "Female",
+			"date": "20072019",
+			"project": "NA",
+			"fresher": "Yes"
+		},
+		{
+			"name": "Nisha",
+			"location": "Noida",
+			"field": "ABAP",
+			"gender": "Female",
+			"date": "20072019",
+			"project": "NA",
+			"fresher": "Yes"
+		}
+
+	]
+
+}

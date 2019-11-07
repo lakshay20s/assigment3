@@ -107,31 +107,40 @@
 											</ObjectListItem>
 										</items>
 									</List>-->
-									<Table id="tbData" items="{animal>/animals}">
+									<Table id="tbData" items="{empdata>/empdata}">
 										<columns>
 											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
-												<Text text="Animal Name"/>
+												<Text text="Name"/>
 											</Column>
 											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
-												<Text text="Date"/>
+												<Text text="Location"/>
 											</Column>
 											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
-												<Text text="Recoded place"/>
+												<Text text="Field"/>
 											</Column>
 											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
-												<Text text="Remaining percentage"/>
+												<Text text="Gender"/>
 											</Column>
 											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
-												<Text text="Available for purchase"/>
+												<Text text="Joining Data"/>
 											</Column>
+											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+												<Text text="Project Alocated"/>
+											</Column>
+											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+												<Text text="Is freshers ?"/>
+											</Column>
+										
 										</columns>
 										<items>
 											<ColumnListItem vAlign="Middle">
-												<Text wrapping="true" id="txa" text="{animal>name}"/>
-												<Text wrapping="true" id="txb" text="{path : 'animal>date',formatter:'.test.dateformat'}"/>
-												<Text wrapping="true" id="txc" text="{path : 'animal>place',formatter:'.test.city'}"/>
-												<Text wrapping="true" id="txd" text="{animal>available}"/>
-												<Text wrapping="true" id="txe" onPress="buyHere" text="Buy Here" visible="{path : 'animal>available', formatter:'.test.isavilable'}"/>
+												<Text wrapping="true" id="txa" text="{empdata>name}"/>
+												<ObjectStatus text="{empdata>location}" state="{path:'empdata>location',formatter:'.test.locstat'}"></ObjectStatus>
+												<Text wrapping="true" id="txc" text="{empdata>field}"/>
+												<ObjectStatus icon="{path:'empdata>gender',formatter:'.test.genderstat'}"></ObjectStatus>
+												<Text wrapping="true" id="txd" text="{path : 'empdata>date',formatter:'.test.dateformat'}"/>
+												<ObjectStatus text="{empdata>project}" inverted="true" state="{path:'empdata>project',formatter:'.test.projstat'}"></ObjectStatus>
+												<ObjectStatus text="{empdata>fresher}" state="{path:'empdata>fresher',formatter:'.test.fieldst'}"></ObjectStatus>
 											</ColumnListItem>
 										</items>
 									</Table>

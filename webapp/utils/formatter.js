@@ -28,7 +28,45 @@ sap.ui.define([],
 					return false;
 				}
 				
+			},
+			genderstat:function(empgender){
+					if (empgender === "Male") {
+					return "sap-icon://status-positive";
+				} else {
+					return "sap-icon://status-critical";
+				}
+			},
+			locstat:function(loc){
+				if (loc === "Dwarka") {
+					return "Indication01";
+				} else if(loc === "Pune"){
+					return "Indication02";
+				}else if(loc === "Mumbai"){
+					return "Indication04";
+				}
+				else if(loc === "Noida"){
+					return "Indication05";
+				}
+				else{
+					return "Indication03";
+				}
+				
+			},
+			fieldst:function(isf){
+					if (isf === "Yes") {
+					return "Warning";
+				} else {
+					return "Success";
+				}
+			},
+			projstat:function(projct){
+					if (projct === "NA") {
+					return "Indication01";
+				} else {
+					return "Success";
+				}
 			}
+				
 		};
 	}
 	/*,

@@ -86,6 +86,12 @@
 				"settings": {},
 				"uri": "./model/animals.json",
 				"preload": false
+			},
+			"empdata": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"uri": "./model/dataemp.json",
+				"preload": false
 			}
 		},
 		"resources": {
