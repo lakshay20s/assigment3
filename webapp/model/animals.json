@@ -1,21 +1,33 @@
 {
 	"animals": [{
 			"name": "Tiger",
+			"date": "10102018",
+			"place": "M",
 			"available": 30
 		}, {
 			"name": "Elephant",
+			"date": "10112019",
+			"place": "D",
 			"available": 60
 		}, {
 			"name": "Deer",
+			"date": "12022015",
+			"place": "N",
 			"available": 50
 		}, {
 			"name": "Lion",
+			"date": "25051997",
+			"place": "MH",
 			"available": 49
 		}, {
 			"name": "Water Bird",
+			"date": "20071990",
+			"place": "P",
 			"available": 70
 		}, {
 			"name": "Fox",
+			"date": "02122013",
+			"place": "H",
 			"available": 65
 		}
 

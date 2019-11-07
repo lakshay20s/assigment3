@@ -1,6 +1,6 @@
 <mvc:View controllerName="Fragment.Fragment.controller.View1" xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc"
-xmlns:image="CustomControl.Fragment.control"
-	displayBlock="true" xmlns="sap.m" xmlns:data="sap.viz.ui5.data" xmlns:feeds="sap.viz.ui5.controls.common.feeds">
+	xmlns:image="CustomControl.Fragment.control" displayBlock="true" xmlns="sap.m" xmlns:data="sap.viz.ui5.data"
+	xmlns:feeds="sap.viz.ui5.controls.common.feeds">
 	<Shell id="shell">
 		<App id="app">
 			<pages>
@@ -15,7 +15,6 @@ xmlns:image="CustomControl.Fragment.control"
 									<Input id="input1" showValueHelp="true" valueHelpRequest="onValueHelpRequested"></Input>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://attachment" text="Pie Charts">
-								
 									<viz:VizFrame vizType="pie" vizProperties="{title:{ text:'PIE chart'}}">
 										<viz:dataset>
 											<data:FlattenedDataset data="{Data>/items}">
@@ -100,17 +99,51 @@ xmlns:image="CustomControl.Fragment.control"
 									</VBox>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://phone" text="Formatter">
-									<List id="idTable" items="{animal>/animals}">
+									<!--<List id="idTable" items="{animal>/animals}">
 										<items>
 											<ObjectListItem title="{animal>name}" number="{animal>available}" numberUnit="available"
 															numberState="{path :'animal>available', formatter:'.test.availablecolor'}">
 												
 											</ObjectListItem>
 										</items>
-									</List>
+									</List>-->
+									<Table id="tbData" items="{animal>/animals}">
+										<columns>
+											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+												<Text text="Animal Name"/>
+											</Column>
+											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+												<Text text="Date"/>
+											</Column>
+											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+												<Text text="Recoded place"/>
+											</Column>
+											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+												<Text text="Remaining percentage"/>
+											</Column>
+										</columns>
+										<items>
+											<ColumnListItem vAlign="Middle">
+												<Text wrapping="true" id="txa" text="{animal>name}"/>
+												<Text wrapping="true" id="txb" text="{path : 'animal>date',formatter:'.test.dateformat'}"/>
+												<Text wrapping="true" id="txc" text="{path : 'animal>place',formatter:'.test.city'}"/>
+												<Text wrapping="true" id="txe" text="{animal>available}"/>
+											</ColumnListItem>
+										</items>
+									</Table>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://inventory" text="Image Hover">
-									<Image src="test-resources/sap/ui/documentation/sdk/images/nature/ALotOfElephants_small.jpg" width="170px"></Image>
+									<Image
+										src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b00ece909b8490bdf1c3c5b4a6915524/invenio-business-solutions.jpg"
+										width="170px"></Image>
+								</IconTabFilter>
+								<IconTabFilter icon="sap-icon://phone" text="Formatter 2">
+									<List id="idTable" items="{animal>/animals}">
+										<items>
+											<ObjectListItem title="{animal>name}" number="{animal>available}" numberUnit="available"
+												numberState="{path :'animal>available', formatter:'.test.availablecolor'}"></ObjectListItem>
+										</items>
+									</List>
 								</IconTabFilter>
 							</items>
 						</IconTabBar>
