@@ -20,6 +20,14 @@ sap.ui.define([],
 				var newdate = date.substring(0,2)+"/"+date.substring(2,4)+"/"+date.substring(4);
 				return newdate;
 				
+			},
+			isavilable:function(available){
+					if (available > 50) {
+					return true;
+				} else {
+					return false;
+				}
+				
 			}
 		};
 	}

@@ -121,13 +121,17 @@
 											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
 												<Text text="Remaining percentage"/>
 											</Column>
+											<Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true" width="15%">
+												<Text text="Available for purchase"/>
+											</Column>
 										</columns>
 										<items>
 											<ColumnListItem vAlign="Middle">
 												<Text wrapping="true" id="txa" text="{animal>name}"/>
 												<Text wrapping="true" id="txb" text="{path : 'animal>date',formatter:'.test.dateformat'}"/>
 												<Text wrapping="true" id="txc" text="{path : 'animal>place',formatter:'.test.city'}"/>
-												<Text wrapping="true" id="txe" text="{animal>available}"/>
+												<Text wrapping="true" id="txd" text="{animal>available}"/>
+												<Text wrapping="true" id="txe" onPress="buyHere" text="Buy Here" visible="{path : 'animal>available', formatter:'.test.isavilable'}"/>
 											</ColumnListItem>
 										</items>
 									</Table>
