@@ -1,20 +1,38 @@
+.textGrp1 {
+    color: RED !important;
+}
 
+.textGrp2 {
+    color: Blue !important;
+}
 
+.textGrp3 {
+    color: Green !important;
+}
+
+.textGrp4 {
+    color: Pink !important;
+}
+
+.textGrp4 {
+    color: darkgoldenrod !important;
+}
 
 input#container-Fragment---View1--input2-inner {
     background: lightpink !important;
     width: 300px !important;
 }
 
-input:hover{
-	background:mintcream !important;
-	width:200PX !important;
+input:hover {
+    background: mintcream !important;
+    width: 200PX !important;
 }
 
-RadioButton : hover{
-	background : green !important;
-	color : red !important;
+RadioButton: hover {
+    background: green !important;
+    color: red !important;
 }
-img#__image0:hover{
-	zoom:4;
+
+img#__image0:hover {
+    zoom: 4;
 }
