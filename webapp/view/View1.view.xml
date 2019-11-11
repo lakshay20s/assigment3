@@ -1,5 +1,5 @@
 <mvc:View controllerName="Fragment.Fragment.controller.View1" xmlns:viz="sap.viz.ui5.controls" xmlns:mvc="sap.ui.core.mvc"
-	xmlns:image="CustomControl.Fragment.control" displayBlock="true" xmlns="sap.m" xmlns:data="sap.viz.ui5.data"
+	xmlns:myControl="Fragment.Fragment.customcontrols" displayBlock="true" xmlns="sap.m" xmlns:data="sap.viz.ui5.data"
 	xmlns:feeds="sap.viz.ui5.controls.common.feeds">
 	<Shell id="shell">
 		<App id="app">
@@ -88,8 +88,8 @@
 										</HBox>
 										<HBox>
 											<Label text="Gender"></Label>
-											<RadioButton text="Male" groupName="gender"></RadioButton>
-											<RadioButton text="Female" groupName="gender"></RadioButton>
+											<RadioButton class="fillBlock" text="Male" groupName="gender"></RadioButton>
+											<RadioButton class="fillBlock" text="Female" groupName="gender"></RadioButton>
 										</HBox>
 										<HBox>
 											<Label text="Highest Qualification"></Label>
@@ -161,7 +161,12 @@
 								<IconTabFilter icon="sap-icon://inventory" text="Image Hover">
 									<Image
 										src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_b00ece909b8490bdf1c3c5b4a6915524/invenio-business-solutions.jpg"
-										width="170px"></Image>
+										width="170px" class="imgHovwer"></Image>
+								</IconTabFilter>
+									<IconTabFilter icon="sap-icon://inventory" text="Image Hover 2">
+									<myControl:custom
+										src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hawaii_turtle_2.JPG/640px-Hawaii_turtle_2.JPG?uselang=de"
+										hover="onClick" width="170px" />
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://phone" text="Formatter 2">
 									<List id="idTable" items="{animal>/animals}">

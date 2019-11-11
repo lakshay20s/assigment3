@@ -33,6 +33,9 @@ RadioButton: hover {
     color: red !important;
 }
 
-img#__image0:hover {
-    zoom: 4;
+.fillBlock{
+	fill:green !important;
+}
+.imgHovwer:hover{
+	zoom: 2;
 }
